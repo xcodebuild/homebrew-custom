@@ -1,4 +1,5 @@
-class CodeTerminal < Formula
+cask "codeterminal" do
+  # NOTE: "2" is not a version number, but an intrinsic part of the product name
   version "0.0.1"
   if Hardware::CPU.intel?
     url "https://nightly.link/xcodebuild/CodeTerminal/workflows/nightly/main/CodeTerminalNightly-macOS-Intel.zip"
