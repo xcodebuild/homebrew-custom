@@ -14,7 +14,7 @@ cask "codeterminal" do
   auto_updates true
 
   livecheck do
-    url "https://cdn.jsdelivr.net/gh/xcodebuild/codeterminal@main/package.json"
+    url "https://cdn.jsdelivr.net/gh/xcodebuild/codeterminal@main/code/package.json"
     strategy :page_match do |page|
       JSON.parse(page)["version"]
     end
